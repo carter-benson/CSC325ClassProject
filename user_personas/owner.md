@@ -1,21 +1,21 @@
 # Persona 3: Owner
 
 **Name:** Olivia Bennett
-**Role:** CEO & Product Owner
+**Role:** Undergraduate Computer Science Student
 **Demographics:** 45 years old, Female, New York, NY
 
 ## Goals and Motivations
 
-- Aims to grow the user base and maximize revenue.
-- Seeks to balance innovation with maintaining a stable product.
-- Values customer feedback but also prioritizes business objectives.
+- Aims to leverage the portfolio to secure internships and full-time job opportunities.
+- Wants to build a strong professional online presence to stand out in competitive tech job markets.
+- Seeks to use the portfolio as a platform for networking and connecting with industry professionals.
 
 ## Challenges and Pain Points
 
-- Struggles to align development priorities with business goals.
-- Needs to make strategic decisions despite limited technical knowledge.
-- Faces pressure from investors to maintain profitability while funding new features.
+- Difficulty in tailoring the portfolio to appeal to different types of employers (e.g., startups vs. large tech companies).
+- Struggles to keep the content up-to-date with new skills and projects while maintaining consistency.
+- Concerns about the portfolio website’s SEO and visibility to ensure it reaches the right audience.
 
 ## Example Scenario
 
-Olivia reviews the latest user feedback and notices recurring complaints about software performance. At the same time, the sales team urges her to approve a new feature that could attract more enterprise clients. She consults the development team to understand the feasibility but realizes fixing performance issues might delay new features. She must decide whether to focus on stability or push forward with expansion goals.
+Olivia reviews analytics data showing that most visitors leave the portfolio after viewing the homepage. Realizing she needs a stronger call-to-action, Olivia updates the homepage with a more engaging introduction and direct links to key projects. She also optimizes the About Me section to better communicate her career goals and technical expertise.

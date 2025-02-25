@@ -11,7 +11,7 @@ Both of these tools are to be used in a command line interface.
 
 ## Best Practices
 
-It is important that you use both Vale and markdownlint together to maintain the quality of your markdown
+It's important that you use both Vale and markdownlint together to maintain the quality of your markdown
 files. Furthermore, you should address all issues presented by both Vale and markdownlint.
 
 ## Using Vale

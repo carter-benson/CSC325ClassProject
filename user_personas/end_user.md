@@ -1,21 +1,21 @@
 # Persona 1: End User
 
 **Name:** Alex Jones  
-**Role:** Customer Support Representative  
+**Role:** Hiring Manager 
 **Demographics:** 29 years old, Male, Chicago, IL
 
 ## Goals and Motivations
 
-- Needs a reliable tool to track customer interactions efficiently.
-- Wants an intuitive interface that minimizes time spent navigating menus.
-- Values software that integrates well with other customer support tools.
+- Seeks qualified candidates with strong technical skills and relevant project experience.
+- Values clear, concise presentations of skills and achievements.
+- Wants to quickly assess a candidate's fit for a role through their online portfolio.
 
 ## Challenges and Pain Points
 
-- Struggles with slow-loading interfaces that disrupt workflow.
-- Frustrated by lack of customization in ticket management.
-- Often encounters issues with software updates causing unexpected changes.
+- Frustrated by portfolios that are difficult to navigate or poorly organized.
+- Needs efficient ways to verify the authenticity of the showcased projects and skills.
+- Finds it challenging to assess soft skills through technical portfolios alone.
 
 ## Example Scenario
 
-Alex starts their shift and logs into the software to check incoming customer tickets. They quickly search for past interactions using the search function but find that some queries take too long to load. They also need to create a custom filter to prioritize high-urgency cases, but the software doesn’t allow enough customization. They submit feedback but feel unsure whether their concerns will be addressed in future updates.
+Alex is reviewing applicants for a software engineering position. He clicks on a link to a candidate’s online portfolio and is impressed by the clean, organized layout. He easily finds detailed descriptions of relevant projects, complete with source code links. Satisfied with the candidate’s technical skills, he decides to schedule an interview.
