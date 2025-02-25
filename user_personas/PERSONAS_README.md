@@ -1,10 +1,13 @@
-# User Personas #
+# User Personas
 
-### Summary ###
+## Summary
+
 The personas serve as references for stakeholders to understand the different users of the software. It highlights their goals, challenges, and interactions with the software, allowing for better decision-making in product development and improvements.
 
-### Format ###
+## Format
+
 Each persona follows a structured format:
+
 - **Name**: Fictional identity representing the user.
 - **Role**: Their function within the software ecosystem.
 - **Demographics**: Basic background details.
