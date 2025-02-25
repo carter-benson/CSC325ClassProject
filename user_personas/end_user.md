@@ -1,7 +1,7 @@
 # Persona 1: End User
 
 **Name:** Alex Jones  
-**Role:** Hiring Manager 
+**Role:** Hiring Manager
 **Demographics:** 29 years old, Male, Chicago, IL
 
 ## Goals and Motivations
