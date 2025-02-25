@@ -7,7 +7,8 @@ To ensure only high-quality markdown files are pushed to this repository, you ca
 - **Vale:** Checks for grammar, style, and spelling issues.
 - **markdownlint-cli:** Checks for markdown formatting issues.
 
-Both of these tools are to be used in a command line interface.
+Both of these tools are to be used in a command line interface. When you setup your codespace, the repository
+will automatically download the neccessary files for vale and markdownlint to work.
 
 ## Best Practices
 
