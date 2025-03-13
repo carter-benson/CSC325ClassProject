@@ -1,3 +1,4 @@
+'use client'
 import * as React from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
@@ -31,3 +32,30 @@ export default function Home() {
     </Container>
   );
 }
+ //import container 
+ //import box
+ //import hero
+ //import LogoCollection from '@/components/LogoCollection';
+ //import Features from '@/components/Features';
+ //import Divider
+ //
+ //export default function Home
+ // return (
+ //   <Container maxWidth="lg">
+ //   <Box
+ //     sx={{
+ //       
+ //     
+ //       Divider
+ //       Testimonials
+ //       Divider
+ //       Highlights
+ //       Divider
+ //       Pricing
+ //       Divider
+ //       FAQ
+ //       Divider
+ //       Footer
+ //   </  div>
+ // </Box>
+ //</Container>
