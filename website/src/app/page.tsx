@@ -13,11 +13,10 @@ import LogoCollection from '@/components/LogoCollection';
 import Features from '@/components/Features';
 import Hero from '@/components/Hero';
 import AppAppBar from '@/components/AppAppBar';
-import Testimonials from '@/components/Testimonials';
 import Highlights from '@/components/Highlights';
-import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
+import Button from '@mui/material/Button';
 
 export default function Home() {
   return (
@@ -31,60 +30,32 @@ export default function Home() {
           alignItems: 'center',
         }}
       >
+        <Hero />
+        
         <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-          Material UI - Next.js App Router example in TypeScript
+          Carter Benson - Home
         </Typography>
-        <Link href="/about" color="secondary" component={NextLink}>
-          Go to the about page
-        </Link>
+        
+        {/* About page navigation button */}
+        <Box sx={{ maxWidth: 'sm' }}>
+          <Button variant="contained" component={NextLink} href="/about">
+            Go to the About Page
+          </Button>
+        </Box>
 
         <AppAppBar />
-        <Hero />
+        
         <div>
           <LogoCollection />
           <Features />
           <Divider />
-          <Testimonials />
-          <Divider />
           <Highlights />
           <Divider />
-          <Pricing />
-          <Divider />
           <FAQ />
-          <Divider />
-          <Footer />
         </div>
 
-        <ProTip />
         <Copyright />
       </Box>
     </Container>
   );
 }
-//import container 
-//import box
-//import hero
-//import LogoCollection from '@/components/LogoCollection';
-//import Features from '@/components/Features';
-//import Divider
-//
-//export default function Home
-// return (
-//   <Container maxWidth="lg">
-//   <Box
-//     sx={{
-//
-//
-//       Divider
-//       Testimonials
-//       Divider
-//       Highlights
-//       Divider
-//       Pricing
-//       Divider
-//       FAQ
-//       Divider
-//       Footer
-//   </  div>
-// </Box>
-//</Container>
