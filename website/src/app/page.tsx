@@ -22,7 +22,8 @@ export default function Home() {
     <Container maxWidth="lg">
       <Box
         sx={{
-          my: 4,
+          mt: 0,
+          mb: 4,
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -42,7 +43,6 @@ export default function Home() {
               width: { sm: '100%', md: '80%' },
             }}
             >
-            
             Currently studying computer science at Mercer University, Macon GA.
         </Typography>
 

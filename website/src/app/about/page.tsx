@@ -6,19 +6,23 @@ import Button from '@mui/material/Button';
 import NextLink from 'next/link';
 import Copyright from '@/components/Copyright';
 import AppAppBar from '@/components/AppAppBar';
+import Hero from '@/components/Hero';
 
 export default function About() {
   return (
     <Container maxWidth="lg">
       <Box
         sx={{
-          my: 4,
+          mt: 0,
+          mb: 4,
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
         }}
       >
+
+        <Hero />
 
         <AppAppBar />
         

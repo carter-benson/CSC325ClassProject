@@ -9,6 +9,8 @@ import Typography from '@mui/material/Typography';
 import visuallyHidden from '@mui/utils/visuallyHidden';
 import { styled } from '@mui/material/styles';
 
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+
 const StyledBox = styled('div')(({ theme }) => ({
   alignSelf: 'center',
   width: '100%',
@@ -33,6 +35,57 @@ const StyledBox = styled('div')(({ theme }) => ({
     borderColor: (theme.vars || theme).palette.grey[700],
   }),
 }));
+
+function GetTitleText() {
+  const location = useLocation();
+  let titleText: string = '';
+
+  if (location.pathname == '/') {
+    titleText = 'Home';
+  } else if (location.pathname == '/about') {
+    titleText = 'About Me';
+    // anticipate edge case of not getting a valid location
+  } else {
+    titleText = 'Title';
+  }
+
+  return (
+    <Typography
+      variant="h1"
+      sx={{
+        display: 'flex',
+        flexDirection: { xs: 'column', sm: 'row' },
+        alignItems: 'center',
+        fontSize: 'clamp(3rem, 10vw, 3.5rem)',
+      }}
+    >
+      {titleText}
+    </Typography>
+  );
+}
+
+function RoutePage() {
+  // only render if page is currently loaded
+  const [hasMounted, setHasMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) {
+    return null;
+  }
+
+
+  return (
+    <Router>
+      <Routes>
+        <Route path='/' element={<GetTitleText />} />
+        <Route path='/about' element={<GetTitleText />} />
+      </Routes>
+    </Router>
+  );
+}
 
 export default function Hero() {
   return (
@@ -64,17 +117,9 @@ export default function Hero() {
           useFlexGap
           sx={{ alignItems: 'center', width: { xs: '100%', sm: '70%' } }}
         >
-          <Typography
-            variant="h1"
-            sx={{
-              display: 'flex',
-              flexDirection: { xs: 'column', sm: 'row' },
-              alignItems: 'center',
-              fontSize: 'clamp(3rem, 10vw, 3.5rem)',
-            }}
-          >
-            Home&nbsp;
-          </Typography>
+
+        <RoutePage />
+
         </Stack>
       </Container>
     </Box>
