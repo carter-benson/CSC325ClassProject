@@ -1,3 +1,4 @@
+'use client'
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -55,12 +56,13 @@ export default function Highlights() {
   return (
     <Box
       id="highlights"
-      sx={{
+      sx={(theme) => ({
         pt: { xs: 4, sm: 12 },
         pb: { xs: 8, sm: 16 },
         color: 'white',
-        bgcolor: 'grey.900',
-      }}
+        bgcolor: 'grey.200',
+        ...theme.applyStyles('dark', { bgcolor: 'grey.900' })
+      })}
     >
       <Container
         sx={{
@@ -77,10 +79,10 @@ export default function Highlights() {
             textAlign: { sm: 'left', md: 'center' },
           }}
         >
-          <Typography component="h2" variant="h4" gutterBottom>
+          <Typography component="h2" variant="h4" gutterBottom sx={{ color: 'text.primary' }}>
             Highlights
           </Typography>
-          <Typography variant="body1" sx={{ color: 'grey.400' }}>
+          <Typography variant="body1" sx={{ color: 'text.secondary' }}>
             Explore why our product stands out: adaptability, durability,
             user-friendly design, and innovation. Enjoy reliable customer support and
             precision in every detail.

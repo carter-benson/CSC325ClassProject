@@ -5,7 +5,6 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import NextLink from 'next/link';
-import ProTip from '@/components/ProTip';
 import Copyright from '@/components/Copyright';
 
 import Divider from '@mui/material/Divider';
@@ -33,15 +32,19 @@ export default function Home() {
         <Hero />
         
         <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-          Carter Benson - Home
+          Carter Benson
         </Typography>
-        
-        {/* About page navigation button */}
-        <Box sx={{ maxWidth: 'sm' }}>
-          <Button variant="contained" component={NextLink} href="/about">
-            Go to the About Page
-          </Button>
-        </Box>
+
+        <Typography
+            sx={{
+              textAlign: 'center',
+              color: 'text.secondary',
+              width: { sm: '100%', md: '80%' },
+            }}
+            >
+            
+            Currently studying computer science at Mercer University, Macon GA.
+        </Typography>
 
         <AppAppBar />
         

@@ -14,8 +14,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ColorModeIconDropdown from '../shared-theme/ColorModeIconDropdown';
 import Sitemark from './SitemarkIcon';
-
-import HomeIcon from '@mui/icons-material/Home';
 import type {} from '@mui/material/themeCssVarsAugmentation';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
@@ -55,16 +53,13 @@ export default function AppAppBar() {
       <Container maxWidth="lg">
         <StyledToolbar variant="dense" disableGutters>
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
-          <HomeIcon color="action" />
+          <MenuIcon color="action" />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button variant="text" color="info" size="small">
+              <Button variant="text" sx={{ color: 'text.primary' }} size="small" href="/">
                 Home
               </Button>
-              <Button variant="text" color="info" size="small">
+              <Button variant="text" sx={{ color: 'text.primary' }} size="small" href="/about">
                 About Me
-              </Button>
-              <Button variant="text" color="info" size="small">
-                Projects
               </Button>
             </Box>
           </Box>
@@ -104,23 +99,8 @@ export default function AppAppBar() {
                   </IconButton>
                 </Box>
 
-                <MenuItem>Features</MenuItem>
-                <MenuItem>Testimonials</MenuItem>
-                <MenuItem>Highlights</MenuItem>
-                <MenuItem>Pricing</MenuItem>
-                <MenuItem>FAQ</MenuItem>
-                <MenuItem>Blog</MenuItem>
                 <Divider sx={{ my: 3 }} />
-                <MenuItem>
-                  <Button color="primary" variant="contained" fullWidth>
-                    Sign up
-                  </Button>
-                </MenuItem>
-                <MenuItem>
-                  <Button color="primary" variant="outlined" fullWidth>
-                    Sign in
-                  </Button>
-                </MenuItem>
+                
               </Box>
             </Drawer>
           </Box>

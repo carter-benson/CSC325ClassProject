@@ -42,7 +42,7 @@ export default function FAQ() {
           textAlign: { sm: 'left', md: 'center' },
         }}
       >
-        Frequently asked questions
+        More Info
       </Typography>
       <Box sx={{ width: '100%' }}>
         <Accordion
@@ -55,7 +55,7 @@ export default function FAQ() {
             id="panel1d-header"
           >
             <Typography component="span" variant="subtitle2">
-              How do I contact customer support if I have a question or issue?
+              What are my plans after college?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -64,10 +64,7 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              You can reach our customer support team by emailing&nbsp;
-              <Link href="mailto:support@email.com">support@email.com</Link>
-              &nbsp;or calling our toll-free number. We&apos;re here to assist you
-              promptly.
+              I plan to pursue a degree in software developement.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -81,7 +78,7 @@ export default function FAQ() {
             id="panel2d-header"
           >
             <Typography component="span" variant="subtitle2">
-              Can I return the product if it doesn&apos;t meet my expectations?
+              What is my availability?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -90,9 +87,7 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              Absolutely! We offer a hassle-free return policy. If you&apos;re not
-              completely satisfied, you can return the product within [number of
-              days] days for a full refund or exchange.
+              I am open to working remote, on-site, and hybrid.
             </Typography>
           </AccordionDetails>
         </Accordion>
