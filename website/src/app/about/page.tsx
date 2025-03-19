@@ -4,9 +4,9 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import NextLink from 'next/link';
-import Copyright from '@/components/Copyright';
 import AppAppBar from '@/components/AppAppBar';
 import Hero from '@/components/Hero';
+import FAQ from '@/components/FAQ';
 
 export default function About() {
   return (
@@ -25,12 +25,8 @@ export default function About() {
         <Hero />
 
         <AppAppBar />
-        
-        <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-          Material UI - Next.js example in TypeScript
-        </Typography>
 
-        <Copyright />
+        <FAQ />
       </Box>
     </Container>
   );

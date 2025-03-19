@@ -16,40 +16,23 @@ import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
 const items = [
   {
     icon: <SettingsSuggestRoundedIcon />,
-    title: 'Adaptable performance',
+    title: 'Flexible Availability',
     description:
-      'Our product effortlessly adjusts to your needs, boosting efficiency and simplifying your tasks.',
+      'I am more than open to working both on-site and remotely. My hours are flexible, and I can easily make time for work.',
   },
   {
     icon: <ConstructionRoundedIcon />,
-    title: 'Built to last',
+    title: 'Resourceful',
     description:
-      'Experience unmatched durability that goes above and beyond with lasting investment.',
+      'I ensure that my team and I are working efficiently and effectivly, always searching for ways to increae our output.',
   },
   {
     icon: <ThumbUpAltRoundedIcon />,
-    title: 'Great user experience',
+    title: 'Collaborative',
     description:
-      'Integrate our product into your routine with an intuitive and easy-to-use interface.',
+      'I enjoy working in teams of all sizes, and I am more than willing to assist my peers wherever necessary.',
   },
-  {
-    icon: <AutoFixHighRoundedIcon />,
-    title: 'Innovative functionality',
-    description:
-      'Stay ahead with features that set new standards, addressing your evolving needs better than the rest.',
-  },
-  {
-    icon: <SupportAgentRoundedIcon />,
-    title: 'Reliable support',
-    description:
-      'Count on our responsive customer support, offering assistance that goes beyond the purchase.',
-  },
-  {
-    icon: <QueryStatsRoundedIcon />,
-    title: 'Precision in every detail',
-    description:
-      'Enjoy a meticulously crafted product where small touches make a significant impact on your overall experience.',
-  },
+
 ];
 
 export default function Highlights() {
@@ -80,12 +63,10 @@ export default function Highlights() {
           }}
         >
           <Typography component="h2" variant="h4" gutterBottom sx={{ color: 'text.primary' }}>
-            Highlights
+            Qualities
           </Typography>
           <Typography variant="body1" sx={{ color: 'text.secondary' }}>
-            Explore why our product stands out: adaptability, durability,
-            user-friendly design, and innovation. Enjoy reliable customer support and
-            precision in every detail.
+            What makes me a great developer?
           </Typography>
         </Box>
         <Grid container spacing={2}>
@@ -96,13 +77,15 @@ export default function Highlights() {
                 component={Card}
                 spacing={1}
                 useFlexGap
-                sx={{
+
+                sx={(theme) => ({
                   color: 'inherit',
                   p: 3,
                   height: '100%',
                   borderColor: 'hsla(220, 25%, 25%, 0.3)',
-                  backgroundColor: 'grey.800',
-                }}
+                  bgcolor: 'grey.500',
+                  ...theme.applyStyles('dark', { bgcolor: 'grey.900' })
+                })}
               >
                 <Box sx={{ opacity: '50%' }}>{item.icon}</Box>
                 <div>

@@ -5,15 +5,12 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import NextLink from 'next/link';
-import Copyright from '@/components/Copyright';
-
 import Divider from '@mui/material/Divider';
 import LogoCollection from '@/components/LogoCollection';
 import Features from '@/components/Features';
 import Hero from '@/components/Hero';
 import AppAppBar from '@/components/AppAppBar';
 import Highlights from '@/components/Highlights';
-import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import Button from '@mui/material/Button';
 
@@ -43,7 +40,7 @@ export default function Home() {
               width: { sm: '100%', md: '80%' },
             }}
             >
-            Currently studying computer science at Mercer University, Macon GA.
+            Currently studying computer science at Mercer University, located in Macon, Georgia.
         </Typography>
 
         <AppAppBar />
@@ -54,10 +51,7 @@ export default function Home() {
           <Divider />
           <Highlights />
           <Divider />
-          <FAQ />
         </div>
-
-        <Copyright />
       </Box>
     </Container>
   );
