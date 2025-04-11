@@ -7,6 +7,7 @@ import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import visuallyHidden from '@mui/utils/visuallyHidden';
+import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
@@ -50,17 +51,33 @@ function GetTitleText() {
   }
 
   return (
-    <Typography
-      variant="h1"
-      sx={{
-        display: 'flex',
-        flexDirection: { xs: 'column', sm: 'row' },
-        alignItems: 'center',
-        fontSize: 'clamp(3rem, 10vw, 3.5rem)',
-      }}
-    >
-      {titleText}
-    </Typography>
+    <div>
+
+      <Typography
+        variant="h1"
+        sx={{
+          display: 'flex',
+          flexDirection: { xs: 'column', sm: 'row' },
+          alignItems: 'center',
+          fontSize: 'clamp(3rem, 10vw, 3.5rem)',
+        }}
+      >
+        {titleText}
+      </Typography>
+
+      <h2>
+        Carter Benson
+      </h2>
+
+      <Button variant="contained" sx={{ mt: 2 }}>
+        Placeholder Button
+      </Button>
+
+      <img
+        src="https://i.ibb.co/cXNYMCnk/output-onlinetools-1.png"
+        style={{ marginTop: '20px', maxWidth: '100%' }}
+      />
+    </div>
   );
 }
 
@@ -118,7 +135,7 @@ export default function Hero() {
           sx={{ alignItems: 'center', width: { xs: '100%', sm: '70%' } }}
         >
 
-        <RoutePage />
+          <RoutePage />
 
         </Stack>
       </Container>
