@@ -70,7 +70,7 @@ function GetTitleText() {
       </h2>
 
       <Button variant="contained" sx={{ mt: 2 }}>
-        Placeholder Button
+        Hero Button
       </Button>
 
       <img

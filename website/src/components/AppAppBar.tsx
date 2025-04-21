@@ -8,12 +8,10 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Container from '@mui/material/Container';
 import Divider from '@mui/material/Divider';
-import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ColorModeIconDropdown from '../shared-theme/ColorModeIconDropdown';
-import Sitemark from './SitemarkIcon';
 import type {} from '@mui/material/themeCssVarsAugmentation';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
