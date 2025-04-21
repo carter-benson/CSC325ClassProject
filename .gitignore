@@ -1,11 +1,8 @@
 # ignore vale styles
-
 styles
 
 #Ignore node generated files
 node_modules
-package.json
-package-lock.json
 
 #Files to keep
 !website/package.json
