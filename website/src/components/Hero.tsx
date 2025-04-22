@@ -2,11 +2,8 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import visuallyHidden from '@mui/utils/visuallyHidden';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 
@@ -75,6 +72,7 @@ function GetTitleText() {
 
       <img
         src="https://i.ibb.co/cXNYMCnk/output-onlinetools-1.png"
+        alt="Image Alt"
         style={{ marginTop: '20px', maxWidth: '100%' }}
       />
     </div>

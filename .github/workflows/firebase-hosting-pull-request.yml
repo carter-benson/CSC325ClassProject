@@ -14,9 +14,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - run: npm ci && npm run build
+      - name: Install Dependancies
+        working-directory: ./website
+        run: npm install
+
+      - name: Lint
+        working-directory: ./website
+        run: npm run lint
+
+      - name: Test
+        working-directory: ./website
+        run: npm run test
+
+      - name: Build
+        working-directory: ./website
+        run: npm run build
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CSC325FIREBASEPROJECT_A07B4 }}
           projectId: csc325firebaseproject-a07b4
+          entryPoint: ./website
