@@ -29,9 +29,10 @@ jobs:
       - name: Build
         working-directory: ./website
         run: npm run build
-        
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CSC325FIREBASEPROJECT_A07B4 }}
           projectId: csc325firebaseproject-a07b4
+          entryPoint: ./website
